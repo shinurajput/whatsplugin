@@ -1,0 +1,19 @@
+const Asena = require('../events');
+const {MessageType} = require('@adiwajshing/baileys');
+
+AsAsena.addCommand({pattern: 'shinu', fromMe: true}, (async (message, match) => {
+
+    var r_text = new Array ();
+r_text[0] = "*coding is life.*";
+r_text[1] = "*it is working shinu.*";
+var i = Math.floor(2*Math.random())
+
+await message.sendMessage(r_text[i]);
+
+}));
+
+Asena.addCommand({pattern: 'infoshinu', fromMe: true}, (async (message, match) => {
+
+    await message.sendMessage("*Codded by @phaticusthiccy*\n💻Usage: *.thanos*\nℹ️Desc: 🇹🇷 Thanos'un en iyi repliklerinden rastgele seçer.\n\n💻Usage: *.enthanos*\nℹ️Desc: 🇬🇧 Choose randomly from Thanos's best quotes.")
+
+}));
